@@ -1,0 +1,71 @@
+[
+  {
+    "id": "pmghp",
+    "title": "PMG Homepage",
+    "description": "메인페이지 및 커리어 페이지 디자인 리뉴얼 진행",
+    "liveUrl": "https://pmgasia.co.kr/",
+    "tags": ["GSAP", "lenis", "Lottie-Animation"],
+    "date": "2025. 07"
+  },
+  {
+    "id": "pmgwiki",
+    "title": "PMG WIKI",
+    "description": "기획, 디자인, 퍼블리싱, 백엔드 및 DB 작업까지 100% 혼자 작업",
+    "liveUrl": "https://pmgwiki.co.kr/",
+    "tags": ["AWS EC2", "Codeigniter3", "Mysql"],
+    "date": "2025. 01"
+  },
+  {
+    "id": "windsor",
+    "title": "Windsor",
+    "description": "2024년 신규 어셋으로 홈페이지 리뉴얼 진행",
+    "liveUrl": "https://windsorglobal.co.kr/",
+    "tags": ["GSAP"],
+    "date": "2024. 11"
+  },
+  {
+    "id": "stanley",
+    "title": "STANLEY",
+    "description": "더현대 팝업스토어 마이크로사이트 제작",
+    "liveUrl": "https://stanley-event.com/",
+    "date": "2024. 10"
+  },
+  {
+    "id": "bat_hyper",
+    "title": "BAT",
+    "description": "Hyper 신제품 출시로 브랜드 페이지 제작",
+    "liveUrl": "https://www.discoverglo.co.kr/glo/hyper",
+    "tags": ["GSAP"],
+    "date": "2024. 08"
+  },
+  {
+    "id": "essilor",
+    "title": "Essilor",
+    "description": "에실로 디지털 가격표 사이트 제작",
+    "liveUrl": "https://www.discoverglo.co.kr/glo/hyper",
+    "tags": ["GSAP"],
+    "date": "2024. 08"
+  },
+  {
+    "id": "naver_gstar",
+    "title": "NAVER Cloud",
+    "description": "2023 네이버 클라우드 G-Star 페이지 제작",
+    "liveUrl": "https://pmg-event.co.kr/ncloud/",
+    "tags": ["Lottie-Animation"],
+    "date": "2023. 11"
+  },
+  {
+    "id": "asus",
+    "title": "ASUS",
+    "description": "ASUS의 프리미엄 게이밍 브랜드인 ROG의 글로벌 앰버서더인 손흥민과의 콜라보레이션을 소개하는 마이크로 사이트<br>프리미엄 게이밍 컨셉에 맞는 다이나믹한 모션을 이용한 패럴랙스 스크롤링 제공<br>모션 레퍼런스 제안 및 기획, 사이트 퍼블리싱 참여",
+    "liveUrl": "https://yejigd.github.io/ASUS-ROG/",
+    "date": "2022. 10"
+  },
+  {
+    "id": "whale-ilust",
+    "title": "Naver Whale",
+    "description": "네이버 웨일의 배경테마 공모전 안내 페이지 및 공모전 응모 페이지 (1차 오픈), 공모전 투표 페이지 (2차 오픈), <br>공모전 수상작 안내 페이지 (3차 오픈) 제작 및 기획 검토 및 제안 참여",
+    "liveUrl": "https://store.whale.naver.com/event/wallpaper-contest",
+    "date": "2022. 06"
+  }
+]
