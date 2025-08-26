@@ -48,7 +48,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="tablet:my-25 my-20">
+          <div className="tablet:my-25 ani_reveal my-20">
             <h2 className="text-2xl font-bold tracking-tight">
               Introduce<span className="text-primary">.</span>
             </h2>
@@ -75,7 +75,7 @@ export default function Home() {
               을 진행한 경험도 보유하고 있습니다.
             </p>
           </div>
-          <div className="tablet:my-25 my-20">
+          <div className="tablet:my-25 ani_reveal my-20">
             <h2 className="text-2xl font-bold tracking-tight">
               Core Competence <span className="text-primary">.</span>
             </h2>
@@ -86,7 +86,7 @@ export default function Home() {
               <li className="pl-2 -indent-2">- 다양한 프로젝트 경험과 팀장 경력을 바탕으로 탁월한 커뮤니케이션 및 리더십 역량 보유</li>
             </ul>
           </div>
-          <div className="tablet:my-25 my-20">
+          <div className="tablet:my-25 ani_reveal my-20">
             <h2 className="text-2xl font-bold tracking-tight">
               Skills <span class="text-primary">.</span>
             </h2>
@@ -130,7 +130,7 @@ export default function Home() {
             <ul className="tablet:grid-cols-2 tablet:mt-20 mt-10 grid grid-cols-1 gap-20">
               {datas.map((data, idx) => (
                 <li key={data.id} className={`ani_reveal ${idx % 2 !== 0 && 'tablet:mt-30'}`}>
-                  <Link to={`/detail/${data.id}`}>
+                  <Link to={`/${data.id}`}>
                     <div className="relative mb-4 w-full overflow-hidden pt-[100%]">
                       <img
                         src={getImageUrl(`${data.id}_thb.jpg`)}

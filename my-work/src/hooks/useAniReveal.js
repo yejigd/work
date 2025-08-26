@@ -1,4 +1,3 @@
-// src/hooks/useAniReveal.js
 import { useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -7,7 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function useAniReveal(rootRef) {
   useLayoutEffect(() => {
-    if (!rootRef?.current) return;
+    if (typeof window === 'undefined' || !rootRef?.current) return;
+
+    let raf1 = 0;
+    let raf2 = 0;
+    let isAlive = true;
 
     // root 내부 이미지 로드 대기
     const waitForImages = () =>
@@ -57,9 +60,14 @@ export function useAniReveal(rootRef) {
             once: true,
           });
         });
-
-        ScrollTrigger.refresh(); // 위치 재계산
       }, rootRef);
+
+      // DOM/스타일/이미지/폰트가 반영된 다음 프레임에서 재계산
+      raf1 = requestAnimationFrame(() => {
+        raf2 = requestAnimationFrame(() => {
+          if (isAlive) ScrollTrigger.refresh();
+        });
+      });
 
       return () => ctx.revert();
     };
@@ -79,7 +87,10 @@ export function useAniReveal(rootRef) {
     window.addEventListener('load', onLoad, { once: true });
 
     return () => {
+      isAlive = false;
       window.removeEventListener('load', onLoad);
+      if (raf1) cancelAnimationFrame(raf1);
+      if (raf2) cancelAnimationFrame(raf2);
       cleanup();
     };
   }, [rootRef]);
