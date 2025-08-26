@@ -88,7 +88,7 @@ export default function Detail() {
         </section>
         <section className="ani_reveal tablet:mt-40 mt-20 tracking-tight">
           <div className="tablet:max-w-320 mx-auto flex w-full flex-wrap justify-between gap-4 px-6">
-            <div className="tablet:mb-0 mb-16 flex-auto">
+            <div className="tablet:mb-0 mb-16 flex-1">
               <p className="tablet:mb-16 mb-10 text-2xl font-semibold">Overview</p>
               <p className="tablet:mb-10 mb-10 break-keep text-3xl font-semibold">{workData.summary}</p>
               <p className="whitespace-pre-line break-keep text-base">{normalizeDesc(workData.description)}</p>
