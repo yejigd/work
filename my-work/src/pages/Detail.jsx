@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 import datas from '@/data/workData.json';
 import { normalizeDesc, getImageUrl } from '@/utils/utils';
@@ -8,7 +8,7 @@ import SplitText from '@components/SplitText/SplitText';
 import { useAniReveal } from '@/hooks/useAniReveal';
 import Header from '@/layouts/Header';
 
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Undo2 } from 'lucide-react';
 
 export default function Detail() {
   const { id } = useParams();
@@ -18,6 +18,8 @@ export default function Detail() {
   const root = useRef(null);
   const imgRef = useRef(null);
   const tagsRef = useRef(null);
+
+  const navigate = useNavigate();
 
   useAniReveal(root);
 
@@ -47,7 +49,7 @@ export default function Detail() {
             <h3 className="tablet:mb-7 tablet:text-8xl mb-[6vw] text-[10vw] font-bold leading-[1.4]">
               <SplitText text={workData.title} />
             </h3>
-            <div className="tablet:mb-10 tablet:text-4xl mb-[6vw] whitespace-pre-line text-[4.5vw] leading-[1.4]">
+            <div className="tablet:mb-10 tablet:text-4xl mb-[6vw] break-keep text-[4.5vw] leading-[1.4]">
               <SplitText text={normalizeDesc(workData.summary)} />
             </div>
             {workData.tags && (
@@ -69,25 +71,29 @@ export default function Detail() {
                 <source src={getImageUrl(`${workData.id}_vis.mp4`)} type="video/mp4" />
               </video>
             ) : (
-              <img
-                ref={imgRef}
-                className="image-cover absolute inset-0"
-                src={getImageUrl(`${workData.id}_vis.png`)}
-                alt={`${workData.id} 키비주얼 이미지`}
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source media="(min-width: 769px)" srcSet={getImageUrl(`${workData.id}_vis.png`)} />
+                <source media="(max-width: 768px)" srcSet={getImageUrl(`${workData.id}_vis_m.png`)} />
+                <img
+                  ref={imgRef}
+                  className="image-cover absolute inset-0"
+                  src={getImageUrl(`${workData.id}_vis.png`)}
+                  alt={`${workData.id} 키비주얼 이미지`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             )}
           </div>
         </section>
-        <section className="ani_reveal tablet:mt-40 mt-40 tracking-tight">
-          <div className="tablet:max-w-320 mx-auto flex w-full flex-wrap justify-between px-6">
-            <div className="tablet:mb-0 mb-16 w-[74%]">
+        <section className="ani_reveal tablet:mt-40 mt-20 tracking-tight">
+          <div className="tablet:max-w-320 mx-auto flex w-full flex-wrap justify-between gap-4 px-6">
+            <div className="tablet:mb-0 mb-16 flex-auto">
               <p className="tablet:mb-16 mb-10 text-2xl font-semibold">Overview</p>
-              <p className="tablet:mb-16 mb-10 text-3xl font-semibold">{workData.summary}</p>
-              <p className="break-keep text-base">{workData.description}</p>
+              <p className="tablet:mb-10 mb-10 break-keep text-3xl font-semibold">{workData.summary}</p>
+              <p className="whitespace-pre-line break-keep text-base">{normalizeDesc(workData.description)}</p>
             </div>
-            <ul className="w-[22%] text-base">
+            <ul className="w-50 text-base">
               <li className="mb-10">
                 <strong className="mb-4 block">Clinet</strong>
                 <span className="text-gray-600">{workData.title}</span>
@@ -105,14 +111,20 @@ export default function Detail() {
             </ul>
           </div>
         </section>
-        <section className="tablet:py-40 py-0">
+        <section className="tablet:py-40 pb-20">
           {workData.imgs &&
             workData.imgs.map((img, idx) => (
-              <div className="ani_reveal relative w-full overflow-hidden pt-20" key={idx}>
+              <div className="ani_reveal tablet:pt-20 relative w-full overflow-hidden pt-10" key={idx}>
                 <img src={getImageUrl(`${workData.id}_${img}`)} className="mx-auto h-auto w-auto max-w-full" />
               </div>
             ))}
         </section>
+        <button
+          type="button"
+          onClick={() => navigate(-1)}
+          className="bg-primary/70 hover:bg-primary duration-400 fixed bottom-4 right-4 h-10 w-10 cursor-pointer rounded bg-opacity-50 leading-10 text-white transition-all">
+          <Undo2 className="mx-auto" />
+        </button>
       </main>
     </>
   );

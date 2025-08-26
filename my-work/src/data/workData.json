@@ -2,8 +2,8 @@
   {
     "id": "pmg",
     "title": "PMG Homepage",
-    "summary": "메인페이지 및 커리어 페이지 디자인 리뉴얼 진행",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "PMG 사내 홈페이지를 새롭게 리뉴얼하여, \n세련된 디자인과 역동적인 인터랙션으로 사용자 경험을 한층 강화",
+    "description": "사내 홈페이지의 메인 페이지와 커리어 페이지를 리뉴얼하며 디자인적 완성도와 사용성을 동시에 높였습니다.\n기능별로 JavaScript를 역할별로 모듈화하여 유지보수성과 확장성을 강화했습니다.\n GSAP ScrollTrigger를 활용해 다이나믹한 애니메이션을 구현했으며, Lenis를 통해 부드러운 스크롤 경험을 제공합니다.\n 커리어 페이지에서는 After Effects 모션을 Lottie Animation으로 적용해 사용자에게 직관적이고 흥미로운 경험을 제공하고자 합니다.",
     "liveUrl": "https://pmgasia.co.kr/",
     "tags": ["GSAP", "ScrollTrigger", "lenis", "Lottie-Animation"],
     "imgs": ["img0.png", "img1.png"],
@@ -12,28 +12,28 @@
   {
     "id": "pmg_wiki",
     "title": "PMG WIKI",
-    "summary": "기획, 디자인, 퍼블리싱, 백엔드 및 DB 작업까지 100% 혼자 작업",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "사내 위키 홈페이지를 기획부터 디자인,\n개발까지 단독으로 100% 수행",
+    "description": "사내 위키 홈페이지 프로젝트를 기획, 디자인, 퍼블리싱, 백엔드 개발, 데이터베이스 설계까지 전 과정을 100% 단독으로 수행했습니다. \nCodeIgniter 기반의 PHP와 MySQL을 활용해 안정적인 시스템을 구현했으며, SummerNote 에디터로 사용자가 쉽게 문서를 작성할 수 있도록 지원했습니다. \n리스트 페이지에는 Infinite Scroll 기능을 적용해 직관적이고 편리한 탐색을 제공하며, 사규, 업무 가이드, 협업에 필요한 기초 지식 등을 한 곳에 체계적으로 정리하여 구성원 간 정보 공유와 협업 효율을 크게 향상시켰습니다. \n정식 라이브 전에는 AWS EC2를 통해 배포하여 실제 운영 환경과 유사하게 사이트를 구현하고 테스트했습니다.",
     "liveUrl": "https://pmgwiki.co.kr/",
-    "tags": ["AWS EC2", "Codeigniter3", "Mysql"],
+    "tags": ["AWS EC2", "Codeigniter3", "PHP", "Mysql"],
     "imgs": ["img0.png", "img1.png", "img2.png", "img3.png"],
     "date": "2025. 01"
   },
   {
     "id": "windsor",
     "title": "Windsor",
-    "summary": "2024년 신규 어셋으로 홈페이지 리뉴얼 진행",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "윈저글로벌 홈페이지 리뉴얼을 통해 \n브랜드의 프리미엄 이미지와 신뢰감을 강화",
+    "description": "정통 스카치 위스키 WINDSOR™ 시리즈와 W BY WINDSOR 시리즈를 대표하는 기업, 윈저글로벌의 홈페이지 디자인 리뉴얼을 진행했습니다. \n전체적인 톤앤매너를 정돈하여 깔끔하면서도 신뢰감 있는 분위기를 구현했으며, 브랜드가 지향하는 프리미엄 이미지를 웹사이트 전반에 자연스럽게 녹여냈습니다. \n이를 통해 소비자들에게 한층 세련되고 고급스러운 경험을 제공하고, 브랜드의 정체성을 강화하는 데 기여했습니다.",
     "liveUrl": "https://windsorglobal.co.kr/",
-    "tags": ["GSAP"],
+    "tags": ["GSAP", "Naver Map API"],
     "imgs": ["img1.png", "img2.png"],
     "date": "2024. 11"
   },
   {
     "id": "stanley",
     "title": "STANLEY",
-    "summary": "더현대 팝업스토어 마이크로사이트 제작",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "STANLEY 더현대 팝업스토어 캠페인을 위한 \n인터랙티브 마이크로사이트를 제작하여 방문객 참여를 유도",
+    "description": "더현대 팝업스토어에서 진행된 'WHAT'S YOUR COLOR?' 캠페인을 위한 마이크로사이트를 작업했습니다.\n사용자가 문항에 따라 A/B를 선택하면 결과에 따른 STANLEY 제품을 추천해주는 구조로 제작되었으며, \n단순한 이벤트 참여를 넘어 '내게 어울리는 STANLEY 제품은 무엇일까?' 하는 궁금증을 유발시켜 브랜드 경험을 강화할 수 있도록 설계했습니다.\n 문항과 결과값을 Object에 담아 페이지 이동 없이 하나의 페이지 안에서 동적으로 렌더링되도록 제작해 매끄러운 사용자 경험을 제공했습니다.",
     "liveUrl": "https://stanley-event.com/",
     "imgs": ["img1.png", "img2.png"],
     "date": "2024. 10"
@@ -41,18 +41,18 @@
   {
     "id": "bat_hyper",
     "title": "BAT",
-    "summary": "Hyper 신제품 출시로 브랜드 페이지 제작",
-    "description": "ㅁㄴㅇㄹ",
-    "liveUrl": "https://www.discoverglo.co.kr/glo/hyper",
-    "tags": ["GSAP", "ScrollTrigger"],
+    "summary": "Hyper Pro 브랜드 페이지로 제품 기능과 \n디자인을 스크롤 애니메이션으로 구현",
+    "description": "BAT의 신규 디바이스 Hyper Pro의 제품 기능과 디자인을 소개하는 브랜드 페이지를 제작했습니다. \n이전 모델 대비 향상된 성능과 기능을 강조하기 위해 GSAP ScrollTrigger를 활용해 스크롤 시 단락별로 핵심 내용을 부각시키는 인터랙티브 애니메이션을 구현했습니다. \nSVG Draw Animation을 적용해 시각적 흥미를 유발하고, 방문자가 자연스럽게 제품 특징과 기능을 이해할 수 있도록 설계했습니다.",
+    "liveUrl": "https://www.discoverglo.co.kr/glo/hyper-pro",
+    "tags": ["GSAP", "ScrollTrigger", "SVG Animation"],
     "imgs": ["img1.png", "img2.png"],
     "date": "2024. 08"
   },
   {
     "id": "essilor",
     "title": "Essilor",
-    "summary": "에실로 디지털 가격표 사이트 제작",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "에실로 디지털 가격표 웹사이트를 제작하여 \n제품 비교와 맞춤 견적 기능을 제공",
+    "description": "기존에는 인쇄물로 제공되던 렌즈 가격표를 웹사이트로 전환하여, 가격이 변동될 때마다 인쇄할 필요 없이 실시간으로 정보를 확인할 수 있도록 구현했습니다. \n니콘, 바리락스, 스텔리스트 등 다양한 렌즈의 특징과 옵션별 가격을 한눈에 확인할 수 있습니다. \n또한 Ajax를 활용해 제품 정보를 불러와 비교하기 팝업으로 손쉽게 비교할 수 있고, \n제품과 옵션을 선택하여 맞춤 견적을 받을 수 있는 기능을 제공해 안경점에서 효율적이고 편리하게 제품 정보를 활용할 수 있도록 설계했습니다.",
     "liveUrl": "https://www.onlineprice.co.kr/",
     "tags": ["GSAP", "ajax"],
     "imgs": ["img1.png", "img2.png", "img3.png"],
@@ -61,8 +61,8 @@
   {
     "id": "naver_gstar",
     "title": "NAVER Cloud",
-    "summary": "2023 네이버 클라우드 G-Star 페이지 제작",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "Naver Cloud 2023 G-Star 마이크로사이트 제작",
+    "description": "2023 G-Star 행사를 위한 Naver Cloud 마이크로사이트를 제작했습니다. \nAfter Effects로 제작된 키 비주얼을 Lottie Animation으로 구현하여 페이지 방문 시 동적으로 움직이는 시각적 경험을 제공했고, Slick Slider를 활용해 슬라이드 전환 시마다 애니메이션을 추가하여 사용자의 흥미를 유도했습니다. \n이를 통해 행사 참여와 브랜드 경험을 더욱 몰입감 있게 전달할 수 있도록 설계했습니다.",
     "liveUrl": "https://pmg-event.co.kr/ncloud/",
     "tags": ["Lottie-Animation"],
     "imgs": ["img1.png", "img2.png"],
@@ -71,8 +71,8 @@
   {
     "id": "asus",
     "title": "ASUS",
-    "summary": "ASUS의 프리미엄 게이밍 브랜드인 ROG의 글로벌 앰버서더인 손흥민과의 콜라보레이션을 소개하는 마이크로 사이트\n프리미엄 게이밍 컨셉에 맞는 다이나믹한 모션을 이용한 패럴랙스 스크롤링 제공\n모션 레퍼런스 제안 및 기획, 사이트 퍼블리싱 참여",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "ASUS ROG × 손흥민 콜라보 마이크로사이트로 패럴랙스 스크롤링 경험 제공",
+    "description": "ASUS 프리미엄 게이밍 브랜드 ROG의 글로벌 앰버서더 손흥민과의 콜라보레이션을 소개하는 마이크로사이트를 제작했습니다. \n프리미엄 게이밍 컨셉에 맞춰 다이나믹한 패럴랙스 스크롤링을 구현했으며, 모션 레퍼런스 제안과 기획, 사이트 퍼블리싱 과정에 참여하여 인터랙티브한 사용자 경험을 제공했습니다. \n이를 통해 브랜드와 콜라보 제품의 매력을 효과적으로 전달할 수 있도록 설계했습니다.",
     "liveUrl": "https://yejigd.github.io/ASUS-ROG/",
     "imgs": ["img1.png", "img2.png"],
     "date": "2022. 10"
@@ -80,8 +80,8 @@
   {
     "id": "whale-ilust",
     "title": "Naver Whale",
-    "summary": "네이버 웨일의 배경테마 공모전 안내 페이지 및 공모전 응모 페이지 (1차 오픈), 공모전 투표 페이지 (2차 오픈), \n공모전 수상작 안내 페이지 (3차 오픈) 제작 및 기획 검토 및 제안 참여",
-    "description": "ㅁㄴㅇㄹ",
+    "summary": "Naver Whale 배경테마 공모전 페이지 제작과 기획 제안 참여",
+    "description": "네이버 웨일 배경테마 공모전의 안내, 응모, 투표, 수상작 안내 페이지를 순차적으로 제작했습니다. \n1차 오픈에서는 공모전 안내와 응모 페이지를, 2차 오픈에서는 투표 페이지를, 3차 오픈에서는 수상작 안내 페이지를 구현했습니다. \n전체 페이지의 기획 검토와 제안 과정에도 참여하여, 사용자가 공모전 정보를 쉽게 확인하고 참여할 수 있는 경험을 설계했습니다.",
     "liveUrl": "https://store.whale.naver.com/event/wallpaper-contest",
     "imgs": ["gif.gif", "img1.png"],
     "date": "2022. 06"
