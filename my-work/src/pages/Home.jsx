@@ -41,8 +41,8 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-800">
                   <Github />
-                  <a href="https://yejigd.github.io/portfolio/" target="_blank">
-                    https://yejigd.github.io/portfolio/
+                  <a href="https://github.com/yejigd/work" target="_blank">
+                    https://github.com/yejigd/work
                   </a>
                 </li>
               </ul>
