@@ -43,7 +43,7 @@
     "title": "BAT",
     "summary": "Hyper Pro 브랜드 페이지로 제품 기능과 \n디자인을 스크롤 애니메이션으로 구현",
     "description": "BAT의 신규 디바이스 Hyper Pro의 제품 기능과 디자인을 소개하는 브랜드 페이지를 제작했습니다. \n이전 모델 대비 향상된 성능과 기능을 강조하기 위해 GSAP ScrollTrigger를 활용해 스크롤 시 단락별로 핵심 내용을 부각시키는 인터랙티브 애니메이션을 구현했습니다. \nSVG Draw Animation을 적용해 시각적 흥미를 유발하고, 방문자가 자연스럽게 제품 특징과 기능을 이해할 수 있도록 설계했습니다.",
-    "liveUrl": "https://www.discoverglo.co.kr/glo/hyper-pro",
+    "liveUrl": "https://yejigd.github.io/hyper-pro/",
     "tags": ["GSAP", "ScrollTrigger", "SVG Animation"],
     "imgs": ["img1.png", "img2.png"],
     "date": "2024. 08"
