@@ -15,8 +15,8 @@
     "summary": "사내 위키 홈페이지를 기획부터 디자인,\n개발까지 단독으로 100% 수행",
     "description": "사내 위키 홈페이지 프로젝트를 기획, 디자인, 퍼블리싱, 백엔드 개발, 데이터베이스 설계까지 전 과정을 100% 단독으로 수행했습니다. \nCodeIgniter 기반의 PHP와 MySQL을 활용해 안정적인 시스템을 구현했으며, SummerNote 에디터로 사용자가 쉽게 문서를 작성할 수 있도록 지원했습니다. \n리스트 페이지에는 Infinite Scroll 기능을 적용해 직관적이고 편리한 탐색을 제공하며, 사규, 업무 가이드, 협업에 필요한 기초 지식 등을 한 곳에 체계적으로 정리하여 구성원 간 정보 공유와 협업 효율을 크게 향상시켰습니다. \n정식 라이브 전에는 AWS EC2를 통해 배포하여 실제 운영 환경과 유사하게 사이트를 구현하고 테스트했습니다.",
     "liveUrl": "https://pmgwiki.co.kr/",
-    "tags": ["AWS EC2", "Codeigniter3", "PHP", "Mysql"],
-    "imgs": ["img0.png", "img1.png", "img2.png", "img3.png"],
+    "tags": ["AWS EC2", "Codeigniter3", "PHP", "Mysql", "Summernote"],
+    "imgs": ["img0.png", "img1.png", "img2.png", "img3.png", "img4.png"],
     "date": "2025. 01"
   },
   {
